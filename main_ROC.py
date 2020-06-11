@@ -73,11 +73,11 @@ FP_rate = []
 
 AUC_ROC = 0
 
-for i in range(100):
+for i in range(101):
 
 	TP, FP, TN, FN = 0, 0, 0, 0
 
-	threshold = 0.01 * (i + 1)
+	threshold = 0.01 * (i)
 	for res in results:
 		y = int(res[0] > threshold)
 
